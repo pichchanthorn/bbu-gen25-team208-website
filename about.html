@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – BBU Gen25 Team 208</title>
+  <meta name="description" content="Learn about BBU Gen25 Web Programming Team 208 from Build Bright University.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        <span class="logo-text-full">BBU Gen25 – Team 208</span>
+        <span class="logo-text-short">BBU Gen25</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-controls">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link active">About</a>
+      <a href="team.html" class="mobile-nav-link">Team</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-subtitle">About Us</p>
+        <h1 class="page-title">BBU Gen25 – Web Programming Team 208</h1>
+        <p class="page-description">
+          We are a dedicated group of Information Technology students from Build Bright University, Phnom Penh
+          Campus. Our team represents Generation 25, Room 208, united by our passion for web development and design.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Who We Are</h2>
+            <p>
+              We are a team of four passionate IT students from Build Bright University, specializing in front-end
+              web development and UI/UX design. Our diverse skills complement each other, allowing us to tackle
+              various aspects of web development effectively.
+            </p>
+            <p>
+              As members of the Science and Technology and Foundation departments, we bring different perspectives
+              and strengths to our collaborative work. Together, we create modern, responsive websites that not only
+              look great but also provide excellent user experiences.
+            </p>
+            <p>
+              Our journey in web programming has taught us the importance of clean code, responsive design, and
+              continuous learning. We embrace new technologies and methodologies to stay current in the
+              ever-evolving field of web development.
+            </p>
+
+          </div>
+
+          <div class="info-card">
+            <h3>University Information</h3>
+            <dl class="info-list">
+              <div class="info-item">
+                <dt>University</dt>
+                <dd>Build Bright University</dd>
+              </div>
+              <div class="info-item">
+                <dt>Campus</dt>
+                <dd>Phnom Penh Campus</dd>
+              </div>
+              <div class="info-item">
+                <dt>Major</dt>
+                <dd>Information Technology</dd>
+              </div>
+              <div class="info-item">
+                <dt>Departments</dt>
+                <dd>Science and Technology / Foundation</dd>
+              </div>
+              <div class="info-item">
+                <dt>Generation</dt>
+                <dd>Gen25, Room 208</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Goals & Focus</h2>
+          <p class="section-description">What drives us and what we aim to achieve</p>
+        </div>
+
+        <div class="goals-grid">
+          <div class="goal-card">
+            <div class="goal-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Our Mission</h3>
+            <p>To create modern, responsive, and user-friendly websites while continuously improving our skills in web development and design.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3>What We Learn</h3>
+            <p>We focus on front-end technologies including HTML5, CSS3, JavaScript, Bootstrap, and Tailwind CSS, along with UI/UX design principles.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="9" y1="18" x2="15" y2="18"></line>
+                <line x1="10" y1="22" x2="14" y2="22"></line>
+                <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+              </svg>
+            </div>
+            <h3>Our Approach</h3>
+            <p>We believe in learning by doing. Each project is an opportunity to apply new concepts and push our creative boundaries.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h3>Our Standards</h3>
+            <p>We strive for clean code, responsive design, accessibility, and modern best practices in every project we undertake.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="about-skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technologies We Focus On</h2>
+          <p class="section-description">Our core tech stack for building modern web applications</p>
+        </div>
+
+        <div class="skills-grid">
+          <span class="skill-badge skill-html">HTML</span>
+          <span class="skill-badge skill-css">CSS</span>
+          <span class="skill-badge skill-js">JavaScript</span>
+          <span class="skill-badge skill-bootstrap">Bootstrap</span>
+          <span class="skill-badge skill-tailwind">Tailwind CSS</span>
+          <span class="skill-badge skill-uiux">UI/UX Design</span>
+          <span class="skill-badge skill-github">GitHub</span>
+        </div>
+
+        <div class="tech-cards">
+          <div class="tech-card">
+            <h3>Front-End Development</h3>
+            <p>Building responsive and interactive user interfaces using HTML5, CSS3, and JavaScript with modern frameworks.</p>
+          </div>
+          <div class="tech-card">
+            <h3>CSS Frameworks</h3>
+            <p>Leveraging Bootstrap and Tailwind CSS to create consistent, responsive, and beautiful designs efficiently.</p>
+          </div>
+          <div class="tech-card">
+            <h3>UI/UX Design</h3>
+            <p>Creating user-centered designs that are both aesthetically pleasing and functional for optimal user experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>BBU Gen25 – Team 208</span>
+          </div>
+          <p class="footer-description">
+            IT students from Build Bright University passionate about front-end development and UI/UX design.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect">
+          <h3 class="footer-heading">Connect</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/pichchanthorn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="mailto:pich_chanthorn@pp.bbu.edu.kh">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Email Us
+              </a>
+            </li>
+            <li>
+              <a href="tel:+855973100485">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Call Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> BBU Gen25 – Web Programming Team 208. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
