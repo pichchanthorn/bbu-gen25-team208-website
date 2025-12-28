@@ -2,66 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Team GitHub Accounts – BBU Gen25 Team 208</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Our Team – BBU Gen25 Team 208</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            christmasRed: "#dc2626",
+            christmasGreen: "#16a34a",
+          },
+        },
+      },
+    };
+  </script>
 </head>
-<body>
 
-<main class="container">
-  <h1 class="section-title">Team GitHub Accounts</h1>
-  <p class="section-description">
-    GitHub profiles of BBU Gen25 – Team 208 members
-  </p>
+<body class="min-h-screen relative text-slate-800">
 
-  <div class="team-github-grid">
+<!-- ❄️ Snow Canvas (TOP LAYER) -->
+<canvas id="snow" class="fixed inset-0 pointer-events-none z-50"></canvas>
 
-    <!-- Member 1 -->
-    <div class="github-card">
-      <h3>Pich Chanthorn</h3>
-      <p>Frontend Developer / Team Lead</p>
-      <a href="https://github.com/pichchanthorn" target="_blank" class="btn btn-primary">
-        Visit GitHub
-      </a>
+<!-- 🎄 Background Wrapper -->
+<div class="min-h-screen bg-gradient-to-b from-sky-100 via-sky-50 to-white relative z-0">
+
+  <section class="relative z-10 py-24 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">
+        Our Team 🎄
+      </h1>
+
+      <p class="text-slate-600">
+        BBU Gen25 – Web Programming Team 208
+      </p>
+
+      <p class="text-christmasGreen font-medium mb-20">
+        Christmas Season Edition ❄
+      </p>
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+
+        <!-- TEAM LEAD -->
+        <article class="team-card relative">
+          <span class="badge">TEAM LEAD</span>
+          <img src="assets/images/team/pich-chanthorn.png" class="avatar" />
+          <h3 class="name">Pich Chanthorn</h3>
+          <p class="role">Frontend Developer / Team Lead</p>
+          <div class="social-group" data-member="pich"></div>
+        </article>
+
+        <!-- MEMBERS -->
+        <article class="team-card">
+          <img src="assets/images/team/mao-vibol.png" class="avatar" />
+          <h3 class="name">Mao Vibol</h3>
+          <p class="role">UI / UX Designer</p>
+          <div class="social-group" data-member="mao"></div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/images/team/san-kimhor.png" class="avatar" />
+          <h3 class="name">San Kimhor</h3>
+          <p class="role">JavaScript Developer</p>
+          <div class="social-group" data-member="san"></div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/images/team/khy-samrith.png" class="avatar" />
+          <h3 class="name">Khy Samrith</h3>
+          <p class="role">Frontend Developer</p>
+          <div class="social-group" data-member="khy"></div>
+        </article>
+
+        <article class="team-card">
+          <img src="assets/images/team/ratana-oudom.png" class="avatar" />
+          <h3 class="name">Ratana Oudom</h3>
+          <p class="role">Content & Testing</p>
+          <div class="social-group" data-member="ratana"></div>
+        </article>
+
+      </div>
     </div>
+  </section>
+</div>
 
-    <!-- Member 2 -->
-    <div class="github-card">
-      <h3>Mao Vibol</h3>
-      <p>UI/UX Designer</p>
-      <a href="https://github.com/USERNAME_HERE" target="_blank" class="btn btn-primary">
-        Visit GitHub
-      </a>
-    </div>
+<!-- Tailwind Components -->
+<style type="text/tailwindcss">
+  .team-card {
+    @apply bg-white/80 backdrop-blur-xl border border-slate-200
+           rounded-2xl p-8 text-center transition-all duration-500
+           hover:-translate-y-3
+           hover:shadow-[0_25px_60px_rgba(220,38,38,0.15)];
+  }
 
-    <!-- Member 3 -->
-    <div class="github-card">
-      <h3>San Kimhor</h3>
-      <p>JavaScript Developer</p>
-      <a href="https://github.com/USERNAME_HERE" target="_blank" class="btn btn-primary">
-        Visit GitHub
-      </a>
-    </div>
+  .avatar {
+    @apply w-28 h-28 mx-auto rounded-full object-cover mb-4;
+    border: 4px solid transparent;
+    background:
+      linear-gradient(white, white) padding-box,
+      linear-gradient(135deg, #dc2626, #16a34a) border-box;
+  }
 
-    <!-- Member 4 -->
-    <div class="github-card">
-      <h3>Khy Samrith</h3>
-      <p>Frontend Developer</p>
-      <a href="https://github.com/USERNAME_HERE" target="_blank" class="btn btn-primary">
-        Visit GitHub
-      </a>
-    </div>
+  .name {
+    @apply text-lg font-semibold;
+  }
 
-    <!-- Member 5 -->
-    <div class="github-card">
-      <h3>Ratana Oudom</h3>
-      <p>Content & Testing</p>
-      <a href="https://github.com/USERNAME_HERE" target="_blank" class="btn btn-primary">
-        Visit GitHub
-      </a>
-    </div>
+  .role {
+    @apply text-sm text-slate-600 mb-6;
+  }
 
-  </div>
-</main>
+  .social-group {
+    @apply flex justify-center gap-4;
+  }
 
+  .social-btn {
+    @apply w-11 h-11 flex items-center justify-center rounded-full
+           bg-slate-100 text-slate-600 transition-all duration-300
+           hover:bg-gradient-to-br hover:from-christmasRed hover:to-christmasGreen
+           hover:text-white hover:-translate-y-1;
+  }
+
+  .badge {
+    @apply absolute -top-4 left-1/2 -translate-x-1/2
+           bg-gradient-to-r from-christmasRed to-christmasGreen
+           text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg;
+  }
+</style>
+
+<!-- JS -->
+<script src="js/github.js"></script>
+<script src="js/snow.js"></script>
 </body>
 </html>
