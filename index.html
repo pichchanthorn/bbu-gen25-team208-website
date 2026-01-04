@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BBU Gen25 – Web Programming Team 208</title>
-  <meta name="description" content="IT students from Build Bright University passionate about front-end development and UI/UX design.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="IT students from Build Bright University passionate about front-end development and UI/UX design."
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
+
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
     <nav class="nav-container">
+
       <a href="index.html" class="logo">
-        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg
+          class="logo-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
           <polyline points="16 18 22 12 16 6"></polyline>
           <polyline points="8 6 2 12 8 18"></polyline>
         </svg>
+
         <span class="logo-text-full">BBU Gen25 – Team 208</span>
         <span class="logo-text-short">BBU Gen25</span>
       </a>
@@ -31,7 +48,12 @@
         <a href="team.html" class="nav-link">Team</a>
         <a href="projects.html" class="nav-link">Projects</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle theme"
+        >
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
@@ -51,7 +73,12 @@
 
       <!-- Mobile Menu Button -->
       <div class="mobile-controls">
-        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+
+        <button
+          class="theme-toggle"
+          id="themeToggleMobile"
+          aria-label="Toggle theme"
+        >
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
@@ -67,7 +94,12 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
         </button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle menu"
+        >
           <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -78,6 +110,7 @@
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
+
       </div>
     </nav>
 
@@ -91,20 +124,25 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main>
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-bg"></div>
+
       <div class="container hero-content animate-fade-in-up">
         <p class="hero-subtitle">Build Bright University</p>
+
         <h1 class="hero-title">
           BBU Gen25 – Web Programming
           <span class="hero-title-accent">Team 208</span>
         </h1>
+
         <p class="hero-description">
-          We are a group of IT students from Build Bright University (Gen25, Room 208). We love front-end
-          development and UI/UX design, and we build modern websites using HTML, CSS, JavaScript, Bootstrap, and
-          Tailwind CSS.
+          We are a group of IT students from Build Bright University (Gen25, Room 208).
+          We love front-end development and UI/UX design, and we build modern websites
+          using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.
         </p>
 
         <div class="hero-buttons">
@@ -115,12 +153,16 @@
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
-          <a href="team.html" class="btn btn-secondary">Meet the Team</a>
+
+          <a href="team.html" class="btn btn-secondary">
+            Meet the Team
+          </a>
         </div>
       </div>
 
       <!-- Stats -->
       <div class="container stats-grid">
+
         <div class="stat-card animate-fade-in-up delay-100">
           <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -128,7 +170,7 @@
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
           </svg>
-          
+
           <p class="stat-value" data-target="5">0</p>
           <p class="stat-label">Team Members</p>
         </div>
@@ -139,7 +181,7 @@
             <line x1="12" y1="11" x2="12" y2="17"></line>
             <line x1="9" y1="14" x2="15" y2="14"></line>
           </svg>
-          
+
           <p class="stat-value" data-target="555" data-suffix="+">0</p>
           <p class="stat-label">Projects</p>
         </div>
@@ -149,20 +191,25 @@
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
-           
+
           <p class="stat-value" data-target="7">0</p>
           <p class="stat-label">Technologies</p>
         </div>
+
       </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills-section">
       <div class="container">
+
         <div class="section-header">
           <h2 class="section-title">Our Tech Stack</h2>
-          <p class="section-description">Technologies we use to build amazing web experiences</p>
+          <p class="section-description">
+            Technologies we use to build amazing web experiences
+          </p>
         </div>
+
         <div class="skills-grid">
           <span class="skill-badge skill-html">HTML</span>
           <span class="skill-badge skill-css">CSS</span>
@@ -172,6 +219,7 @@
           <span class="skill-badge skill-uiux">UI/UX Design</span>
           <span class="skill-badge skill-github">GitHub</span>
         </div>
+
       </div>
     </section>
 
@@ -181,8 +229,10 @@
         <div class="cta-card">
           <h2 class="cta-title">Ready to collaborate?</h2>
           <p class="cta-description">
-            We're always excited to work on new projects and learn new technologies. Get in touch with us!
+            We're always excited to work on new projects and learn new technologies.
+            Get in touch with us!
           </p>
+
           <a href="contact.html" class="btn btn-cta">
             Contact Us
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -193,12 +243,15 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
+
       <div class="footer-grid">
+
         <div class="footer-brand">
           <div class="footer-logo">
             <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -207,6 +260,7 @@
             </svg>
             <span>BBU Gen25 – Team 208</span>
           </div>
+
           <p class="footer-description">
             IT students from Build Bright University passionate about front-end development and UI/UX design.
           </p>
@@ -222,42 +276,70 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-
         <div class="footer-connect">
-          <h3 class="footer-heading">Connect</h3>
-          <ul>
-            <li>
-              <a href="github.html" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="mailto:pich_chanthorn@pp.bbu.edu.kh">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-                Email Us
-              </a>
-            </li>
-            <li>
-              <a href="tel:+855973100485">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-                Call Us
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h3 class="footer-heading">Connect</h3>
+
+        <ul>
+          <li>
+            <a href="github.html" target="_blank" rel="noopener noreferrer">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:pich_chanthorn@pp.bbu.edu.kh">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email Us
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+855973100485">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              Call Us
+            </a>
+          </li>
+        </ul>
+      </div>
+
+        
+
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> BBU Gen25 – Web Programming Team 208. All rights reserved.</p>
+        <p>
+          &copy; <span id="currentYear"></span>
+          BBU Gen25 – Web Programming Team 208. All rights reserved.
+        </p>
       </div>
+
     </div>
   </footer>
 
