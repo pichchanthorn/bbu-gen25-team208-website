@@ -474,13 +474,13 @@ ul {
 
 /* ===== Contact Form Button Fix ===== */
 .contact-form .btn {
-  height: 48px;              /* ⬅ កំណត់កម្ពស់ */
-  padding: 0.75rem 1rem;     /* ⬅ កុំឲ្យធំពេក */
+  height: 48px;              
+  padding: 0.75rem 1rem;     
   font-size: 0.9rem;
 }
 
 .contact-form .btn svg {
-  width: 18px;               /* ⬅ កាត់ SVG ឲ្យតូច */
+  width: 18px;               
   height: 18px;
 }
 
