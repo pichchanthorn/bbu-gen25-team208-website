@@ -1,6 +1,11 @@
 
 # **BBU Gen25 – Team 208 | Web Programming Website**
 
+## 📸 Website Preview (Homepage)
+
+![Homepage Preview](assets/images/screenshots/home_preview.png)
+
+
 This repository contains the **Group Assignment Website** developed by **Build Bright University (BBU) – Generation 25, Team 208** as part of the **Web Programming course**.
 
 The project showcases **team collaboration**, **individual responsibilities**, and the application of **modern front-end web development practices** using core web technologies and popular CSS frameworks.
