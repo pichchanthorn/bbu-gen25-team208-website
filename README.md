@@ -50,8 +50,8 @@ The project demonstrates collaborative front-end development through a structure
 - **Role:** Frontend Developer / Team Lead
 - **Impact Summary:** Built a clean, responsive portfolio interface to present profile, technical skills, projects, and experience in a professional format.
 - **Technologies:** HTML, CSS, JavaScript
-- **Live Demo:** [https://pichchanthorn.github.io/pich-chanthorn-portfolio/](https://pichchanthorn.github.io/pich-chanthorn-portfolio/)
-- **Repository:** [https://github.com/pichchanthorn/pichchanthorn-portfolio](https://github.com/pichchanthorn/pichchanthorn-portfolio)
+- **Live Demo:** [https://pichchanthorn.github.io/bbu-gen25-team208-website/](https://pichchanthorn.github.io/bbu-gen25-team208-website/)
+- **Repository:** [https://github.com/pichchanthorn/bbu-gen25-team208-website?tab=readme-ov-file](https://github.com/pichchanthorn/bbu-gen25-team208-website?tab=readme-ov-file)
 
 ### 2) Educational Platform Landing Page
 
