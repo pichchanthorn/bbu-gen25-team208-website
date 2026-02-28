@@ -100,6 +100,10 @@ BBU-GEN25-TEAM-208/
 │       ├── projects/
 │       └── team/
 ├── css/
+│   ├── base.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── pages.css
 │   └── style.css
 ├── js/
 │   ├── script.js

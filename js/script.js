@@ -48,19 +48,33 @@
   const mobileMenu = document.getElementById("mobileMenu")
 
   if (menuToggle && mobileMenu) {
+    const setMenuState = (isOpen) => {
+      menuToggle.classList.toggle("active", isOpen)
+      mobileMenu.classList.toggle("active", isOpen)
+      menuToggle.setAttribute("aria-expanded", String(isOpen))
+    }
+
     menuToggle.addEventListener("click", () => {
-      menuToggle.classList.toggle("active")
-      mobileMenu.classList.toggle("active")
+      const isOpen = !mobileMenu.classList.contains("active")
+      setMenuState(isOpen)
     })
 
     // Close menu when clicking on a link
     const mobileLinks = mobileMenu.querySelectorAll(".mobile-nav-link")
     mobileLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        menuToggle.classList.remove("active")
-        mobileMenu.classList.remove("active")
+        setMenuState(false)
       })
     })
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && mobileMenu.classList.contains("active")) {
+        setMenuState(false)
+        menuToggle.focus()
+      }
+    })
+
+    setMenuState(false)
   }
 })()
 

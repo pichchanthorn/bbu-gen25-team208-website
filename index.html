@@ -9,7 +9,10 @@
     content="IT students from Build Bright University passionate about front-end development and UI/UX design."
   />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +25,10 @@
 <body>
 
   <!-- Navbar -->
-  <header class="navbar">
-    <nav class="nav-container">
+  <header class="navbar site-header">
+    <nav class="nav-container site-nav__container" aria-label="Primary">
 
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo site-nav__brand" aria-label="BBU Gen25 Team 208 Home">
         <svg
           class="logo-icon"
           viewBox="0 0 24 24"
@@ -42,7 +45,7 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="nav-links">
+      <div class="nav-links site-nav__links">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="team.html" class="nav-link">Team</a>
@@ -99,6 +102,8 @@
           class="menu-toggle"
           id="menuToggle"
           aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
         >
           <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
