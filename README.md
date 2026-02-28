@@ -1,96 +1,87 @@
 
-# **BBU Gen25 – Team 208 | Web Programming Website**
+# BBU Gen25 — Team 208 | Web Programming Website
 
-## 📸 Website Preview (Homepage)
+## Project Snapshot
 
 ![Homepage Preview](assets/images/screenshots/home_preview.png)
 
+This repository contains the academic group website developed by **Build Bright University (BBU), Generation 25, Team 208** for the **Web Programming** course.
 
-This repository contains the **Group Assignment Website** developed by **Build Bright University (BBU) – Generation 25, Team 208** as part of the **Web Programming course**.
+The project demonstrates collaborative front-end development through a structured, multi-page static website that combines semantic HTML, modern CSS architecture, and JavaScript interactivity.
 
-The project showcases **team collaboration**, **individual responsibilities**, and the application of **modern front-end web development practices** using core web technologies and popular CSS frameworks.
+## Academic Context
 
----
+- **Course:** Web Programming
+- **Institution:** Build Bright University (BBU)
+- **Generation:** 25
+- **Team:** 208
+- **Project Type:** Academic Group Assignment
+- **Website Type:** Static Multi-Page Website
+- **Development Scope:** Front-End Only (no backend, no database, no admin panel)
 
-## 📌 Project Overview
+## Key Features
 
-* **Course:** Web Programming
-* **Institution:** Build Bright University (BBU)
-* **Generation:** 25
-* **Team:** 208
-* **Project Type:** Academic Group Assignment
-* **Website Type:** Static Multi-Page Website
-* **Development Style:** Front-End Only (No backend / No database / No admin panel)
+- Multi-page portfolio website for team presentation and project showcasing
+- Responsive interface across desktop, tablet, and mobile breakpoints
+- Modern UI with reusable design system and modular CSS structure
+- Theme-aware styling and polished interaction patterns
+- Team profile section with role-focused presentation
+- Contact page with client-side form validation
 
-This website serves as a **team portfolio and project showcase**, highlighting both **team-based development** and **individual projects**.
+## Live Demo
 
----
+- **Team Website:** _Coming soon (add deployment URL here)_
+- **Suggested hosting:** GitHub Pages / Netlify / Vercel
 
-## 🧑‍🤝‍🧑 Team Members & Roles
+## Website Pages
 
-| No. | Name               | Role                           |
-| --- | ------------------ | ------------------------------ |
-| 1   | **Pich Chanthorn** | Frontend Developer / Team Lead |
-| 2   | Mao Vibol          | UI/UX Designer                 |
-| 3   | San Kimhor         | JavaScript Developer           |
-| 4   | Khy Samrith        | Frontend Developer             |
-| 5   | Ratana Oudom       | Content & Testing              |
+- `index.html` — Home page (overview and introduction)
+- `about.html` — Team background and academic context
+- `team.html` — Team member profiles and roles
+- `projects.html` — Individual and team project showcase
+- `contact.html` — Contact information and inquiry form
+- `github.html` — Tailwind-based special showcase page
 
-Each member contributed according to their role to ensure clean structure, consistent design, and functional user experience.
+## Featured Projects
 
----
+### 1) Personal Portfolio Website
 
-## 📂 Website Pages
+- **Owner:** Pich Chanthorn
+- **Role:** Frontend Developer / Team Lead
+- **Impact Summary:** Built a clean, responsive portfolio interface to present profile, technical skills, projects, and experience in a professional format.
+- **Technologies:** HTML, CSS, JavaScript
+- **Live Demo:** [https://pichchanthorn.github.io/pich-chanthorn-portfolio/](https://pichchanthorn.github.io/pich-chanthorn-portfolio/)
+- **Repository:** [https://github.com/pichchanthorn/pichchanthorn-portfolio](https://github.com/pichchanthorn/pichchanthorn-portfolio)
 
-* **`index.html`** – Home page (overview & introduction)
-* **`about.html`** – About the team and background
-* **`team.html`** – Team member profiles
-* **`projects.html`** – Project showcase (individual & team projects)
-* **`contact.html`** – Contact details and inquiry form
-* **`github.html`** – GitHub / Team showcase page (special Tailwind-based layout)
+### 2) Educational Platform Landing Page
 
----
+- **Owner:** Pich Chanthorn
+- **Role:** Frontend Developer
+- **Impact Summary:** Delivered a conversion-oriented landing page with structured content sections, responsive layout, and clear call-to-action flow.
+- **Technologies:** HTML, CSS, Bootstrap, JavaScript
 
-## 🚀 Featured Projects
+> Each showcased project includes ownership and role attribution to clearly represent individual contribution within the group assignment.
 
-### 🔹 Personal Portfolio Website
+## Contribution Breakdown
 
-* **Owner:** Pich Chanthorn
-* **Role:** Frontend Developer / Team Lead
-* **Description:**
-  A modern personal portfolio website designed to showcase profile, skills, projects, and experience with a clean UI and responsive layout.
-* **Technologies:** HTML, CSS, JavaScript
-* **Live Demo:**
-  [https://pichchanthorn.github.io/pich-chanthorn-portfolio/](https://pichchanthorn.github.io/pich-chanthorn-portfolio/)
-* **GitHub Repository:**
-  [https://github.com/pichchanthorn/pichchanthorn-portfolio](https://github.com/pichchanthorn/pichchanthorn-portfolio)
+| No. | Member | Role | Primary Contribution Scope |
+| --- | --- | --- | --- |
+| 1 | **Pich Chanthorn** | Frontend Developer / Team Lead | Architecture decisions, core UI implementation, project integration |
+| 2 | Mao Vibol | UI/UX Designer | Layout planning, visual consistency, user experience refinement |
+| 3 | San Kimhor | JavaScript Developer | Interactive behaviors, scripting logic, dynamic UI features |
+| 4 | Khy Samrith | Frontend Developer | Page implementation, responsive styling, component-level support |
+| 5 | Ratana Oudom | Content & Testing | Content preparation, proofreading, quality checks and validation |
 
----
+## Technologies & Tools
 
-### 🔹 Educational Platform Landing Page
+- **HTML5** — Semantic page structure
+- **CSS3** — Styling, layout, and responsive design
+- **JavaScript (Vanilla)** — Interactivity and front-end logic
+- **Bootstrap** — Responsive component and layout utilities
+- **Tailwind CSS** — Utility-first styling (used in `github.html`)
+- **Git & GitHub** — Version control and project collaboration
 
-* **Owner:** Pich Chanthorn
-* **Role:** Frontend Developer
-* **Description:**
-  A responsive landing page for an online education platform featuring modern UI sections and call-to-action components.
-* **Technologies:** HTML, CSS, Bootstrap, JavaScript
-
-> 🔍 Each project clearly displays ownership and roles to highlight **individual contributions** within the group assignment.
-
----
-
-## 🛠 Technologies & Tools Used
-
-* **HTML5** – Semantic structure
-* **CSS3** – Custom styling and layout
-* **JavaScript (Vanilla)** – Interactivity and logic
-* **Bootstrap** – Responsive layout components
-* **Tailwind CSS** – Utility-first styling (used in `github.html`)
-* **Git & GitHub** – Version control and project hosting
-
----
-
-## 📁 Folder Structure
+## Folder Structure
 
 ```text
 BBU-GEN25-TEAM-208/
@@ -98,6 +89,7 @@ BBU-GEN25-TEAM-208/
 ├── assets/
 │   └── images/
 │       ├── projects/
+│       ├── screenshots/
 │       └── team/
 ├── css/
 │   ├── base.css
@@ -118,21 +110,15 @@ BBU-GEN25-TEAM-208/
 └── README.md
 ```
 
----
+## Project Objectives
 
-## 🎯 Project Objectives
+- Apply theoretical and practical knowledge from the Web Programming course
+- Practice scalable front-end structure and maintainable code organization
+- Strengthen teamwork through role-based contribution and delivery
+- Produce an academic portfolio artifact suitable for GitHub presentation
 
-* Apply knowledge from the Web Programming course
-* Practice real-world front-end development structure
-* Improve teamwork and role-based collaboration
-* Build an academic portfolio suitable for GitHub and future reference
-
----
-
-## 📄 License
+## License
 
 This project is developed **for educational purposes only** as part of the Web Programming course at **Build Bright University**.
-
----
 
  
