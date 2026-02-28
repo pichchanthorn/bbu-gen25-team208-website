@@ -26,6 +26,14 @@
 
 .hero-content { text-align: center; }
 
+.hero-university-logo {
+  display: block;
+  width: 100%;
+  max-width: 90px;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
 .hero-subtitle,
 .page-subtitle {
   font-family: var(--font-mono);
