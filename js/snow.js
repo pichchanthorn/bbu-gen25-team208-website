@@ -1,4 +1,6 @@
 const canvas = document.getElementById("snow");
+if (!canvas) { /* snow canvas not present on this page */ }
+else {
 const ctx = canvas.getContext("2d");
 
 let w, h;
@@ -49,3 +51,4 @@ function updateSnow() {
 }
 
 setInterval(drawSnow, 30);
+} // end if canvas

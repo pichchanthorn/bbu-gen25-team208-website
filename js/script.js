@@ -276,3 +276,41 @@
   }
 })()
 
+
+
+// ===== Navbar Scroll State =====
+;(() => {
+  const header = document.querySelector('.navbar, .site-header')
+  if (!header) return
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10)
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
+})()
+
+// ===== Scroll Reveal =====
+;(() => {
+  const elements = document.querySelectorAll('.reveal')
+  if (!elements.length) return
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Stagger siblings inside the same grid/list
+          const siblings = entry.target.parentElement
+            ? Array.from(entry.target.parentElement.children).filter(
+                (el) => el.classList.contains('reveal') && !el.classList.contains('revealed')
+              )
+            : []
+          const idx = siblings.indexOf(entry.target)
+          entry.target.style.transitionDelay = idx > 0 ? `${idx * 70}ms` : ''
+          entry.target.classList.add('revealed')
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+  )
+
+  elements.forEach((el) => observer.observe(el))
+})()
