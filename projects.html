@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects – BBU Gen25 Team 208</title>
-  <meta name="description" content="Explore the projects built by BBU Gen25 Web Programming Team 208.">
-  
+  <meta name="description" content="Explore team and individual projects built by BBU Gen25 Web Programming Team 208 at Build Bright University.">
+
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- ===== Navigation ===== -->
   <header class="navbar site-header">
     <nav class="nav-container site-nav__container" aria-label="Primary">
-      
+
       <a href="index.html" class="logo site-nav__brand" aria-label="BBU Gen25 Team 208 Home">
         <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline points="16 18 22 12 16 6"></polyline>
@@ -35,7 +36,7 @@
         <a href="team.html" class="nav-link">Team</a>
         <a href="projects.html" class="nav-link active">Projects</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        
+
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -71,7 +72,7 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
         </button>
-        
+
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
           <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -96,221 +97,354 @@
   </header>
 
   <main>
+
+    <!-- ===== Hero ===== -->
     <section class="page-hero">
       <div class="container">
         <p class="page-subtitle">Our Work</p>
-        <h1 class="page-title">Projects</h1>
+        <h1 class="page-title">Our <span class="hero-title-accent">Projects</span></h1>
         <p class="page-description">
-          Explore the projects we've built as a team. Each project represents our growth and commitment to
-          creating modern, responsive web applications.
+          Explore the web applications and projects built by BBU Gen25 Web Programming Team 208.
+          From collaborative team builds to individual creative experiments — all crafted with
+          passion at Build Bright University.
         </p>
-      </div>
-    </section>
-
-    <section class="projects-section">
-      <div class="container">
-        <div class="projects-grid">
-          
-          <div class="project-card animate-fade-in-up delay-100">
-            <div class="project-image">
-              <img src="assets/images/projects/project1.jpg" alt="Personal Portfolio Website">
-              <div class="project-image-overlay"></div>
-              <span class="project-badge">Individual Project</span>
-            </div>
-
-            <div class="project-content">
-              <h3>Personal Portfolio Website</h3>
-              <div class="project-meta">
-                <span class="meta-item">👤 Owner: Pich Chanthorn</span>
-                <span class="meta-item">⭐ Role: Frontend Developer / Team Lead</span>
-              </div>
-              <p>
-                A modern personal portfolio website independently designed and developed
-                to showcase my profile, skills, projects, certificates, and experience.
-                Built with a clean UI, dark theme, and smooth animations.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-html">HTML</span>
-                <span class="tag tag-css">CSS</span>
-                <span class="tag tag-js">JavaScript</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/pichchanthorn/pich-chanthorn-portfolio" target="_blank" class="btn btn-outline">
-                  View Code
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://pichchanthorn.me/" target="_blank" class="btn btn-primary">
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card animate-fade-in-up delay-200">
-            <div class="project-image">
-              <img src="assets/images/projects/project2.png" alt="Educational Platform Landing Page">
-              <div class="project-image-overlay"></div>
-              <span class="project-badge">Individual Project</span>
-            </div>
-
-            <div class="project-content">
-              <h3>Educational Platform Landing Page</h3>
-              <div class="project-meta">
-                <span class="meta-item">👤 Owner: Pich Chanthorn</span>
-                <span class="meta-item">⭐ Role: Frontend Developer</span>
-              </div>
-              <p>
-                A modern and responsive landing page for an online education platform,
-                featuring course highlights, testimonials, and strong call-to-action
-                sections. Designed with a clean layout and user-focused UI.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-html">HTML</span>
-                <span class="tag tag-css">CSS</span>
-                <span class="tag tag-bootstrap">Bootstrap</span>
-                <span class="tag tag-js">JavaScript</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/pichchanthorn/pichchanthorn-portfolio" target="_blank" class="btn btn-outline">
-                  View Code
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://pichchanthorn.github.io/pichchanthorn-portfolio/" target="_blank" class="btn btn-primary">
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card animate-fade-in-up delay-300">
-            <div class="project-image">
-              <img src="assets/images/projects/christmas-heart-animation.png" alt="Christmas Heart Animation">
-              <div class="project-image-overlay"></div>
-              <span class="project-badge">Individual Project</span>
-            </div>
-
-            <div class="project-content">
-              <h3>Christmas Heart Animation</h3>
-              <div class="project-meta">
-                <span class="meta-item">👤 Owner: Pich Chanthorn</span>
-                <span class="meta-item">⭐ Role: Frontend Developer</span>
-              </div>
-              <p>
-                A festive and romantic heart animation built with HTML, CSS, and JavaScript.
-                Text smoothly follows a heart-shaped path with snow effects and responsive layout.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-html">HTML</span>
-                <span class="tag tag-css">CSS</span>
-                <span class="tag tag-js">JavaScript</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/pichchanthorn/christmas-heart-animation" target="_blank" class="btn btn-outline">
-                  GitHub
-                </a>
-                <a href="https://pichchanthorn.github.io/christmas-heart-animation/" target="_blank" class="btn btn-primary">
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card animate-fade-in-up delay-300">
-            <div class="project-image">
-              <img src="assets/images/projects/project4.png" alt="Web Programming Labs Repository">
-              <div class="project-image-overlay"></div>
-              <span class="project-badge">Academic Labs</span>
-            </div>
-
-            <div class="project-content">
-              <h3>Web Programming Labs & Exercises</h3>
-              <div class="project-meta">
-                <span class="meta-item">🎓 Student: Pich Chanthorn</span>
-                <span class="meta-item">🏫 BBU · Year 2 · Semester 1</span>
-              </div>
-              <p>
-                A public collection of labs and exercises completed during the Web Programming
-                course at Build Bright University. This repository documents my learning progress,
-                hands-on practice, and solutions to assignments provided by the lecturer.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-html">HTML</span>
-                <span class="tag tag-css">CSS</span>
-                <span class="tag tag-js">JavaScript</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/pichchanthorn/lab-bbu-year2-sem1" target="_blank" class="btn btn-outline">
-                  View Repository
-                </a>
-                <a href="#" class="btn btn-primary disabled">
-                  Labs Only
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card animate-fade-in-up delay-400">
-            <div class="project-image">
-              <img src="assets/images/projects/abstract-geometric-pattern.png" alt="Mini E-commerce Product Page">
-              <div class="project-image-overlay"></div>
-              <span class="project-badge">Individual Project</span>
-            </div>
-            <div class="project-content">
-              <h3>Mini E-commerce Product Page</h3>
-              <div class="project-meta">
-                <span class="meta-item">👤 Owner: Pich Chanthorn</span>
-                <span class="meta-item">⭐ Role: Frontend Developer</span>
-              </div>
-              <p>A product showcase page with image gallery, product details, add-to-cart functionality, and related products section.</p>
-              <div class="project-tags">
-                <span class="tag tag-html">HTML</span>
-                <span class="tag tag-css">CSS</span>
-                <span class="tag tag-js">JavaScript</span>
-                <span class="tag tag-tailwind">Tailwind CSS</span>
-              </div>
-              <div class="project-actions">
-                <a href="#" class="btn btn-outline">
-                  View Code
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="#" class="btn btn-primary disabled">
-                  Coming Soon
-                </a>
-              </div>
-            </div>
-          </div>
-
+        <div class="hero-stats-chips">
+          <span class="hero-stat-chip"><span class="chip-value">6+</span>&nbsp;Projects Built</span>
+          <span class="hero-stat-chip"><span class="chip-value">3</span>&nbsp;Team Members</span>
+          <span class="hero-stat-chip"><span class="chip-value">5+</span>&nbsp;Technologies</span>
         </div>
       </div>
     </section>
-    
-    <section class="tech-summary">
+
+    <!-- ===== Projects Section ===== -->
+    <section class="projects-section" aria-label="Projects showcase">
+      <div class="container">
+
+        <!-- Filter Bar -->
+        <div class="projects-filter" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="team" role="tab" aria-selected="false">
+            Team Projects
+          </button>
+          <button class="filter-btn" data-filter="individual" role="tab" aria-selected="false">
+            Individual Projects
+          </button>
+        </div>
+
+        <!-- ── Team Projects ── -->
+        <div class="projects-category" data-category-group="team">
+          <header class="projects-category-header">
+            <span class="section-eyebrow">Collaborative Work</span>
+            <h2 class="section-title">Team Projects</h2>
+            <p class="section-description">Built together as Web Programming Team 208</p>
+          </header>
+
+          <div class="projects-grid">
+
+            <!-- Team Project: BBU Gen25 Website -->
+            <article class="project-card animate-fade-in-up delay-100" data-category="team">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/team-website.png"
+                  alt="BBU Gen25 Team 208 portfolio website home page showing navigation, hero section with gradient text, and dark mode design"
+                  loading="lazy"
+                >
+                <div class="project-image-overlay"></div>
+                <span class="project-badge project-badge-team">Team Project</span>
+                <span class="project-status-badge project-status-inprogress">In Progress</span>
+              </div>
+              <div class="project-content">
+                <h3>BBU Gen25 – Team 208 Portfolio Website</h3>
+                <div class="project-meta">
+                  <span class="meta-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    Team 208 – All Members
+                  </span>
+                </div>
+                <p>The official portfolio website for BBU Gen25 Web Programming Team 208. Built collaboratively to showcase the team, skills, and projects. Features dark mode, responsive layout, smooth animations, and a GitHub activity page.</p>
+                <div class="project-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-js">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/pichchanthorn/bbu-gen25-team208-website" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <span class="btn btn-primary disabled" aria-disabled="true">Live Demo</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div><!-- /team projects -->
+
+        <!-- ── Individual Projects ── -->
+        <div class="projects-category" data-category-group="individual">
+          <header class="projects-category-header">
+            <span class="section-eyebrow">Personal Work</span>
+            <h2 class="section-title">Individual Projects</h2>
+            <p class="section-description">Personal projects crafted independently by team members</p>
+          </header>
+
+          <div class="projects-grid">
+
+            <!-- Individual Project 1: Personal Portfolio -->
+            <article class="project-card animate-fade-in-up delay-100" data-category="individual">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/project1.jpg"
+                  alt="Pich Chanthorn personal portfolio website with dark theme, animated hero, skills section, and project showcase cards"
+                  loading="lazy"
+                >
+                <div class="project-image-overlay"></div>
+                <span class="project-badge project-badge-individual">Individual</span>
+                <span class="project-status-badge project-status-completed">Completed</span>
+              </div>
+              <div class="project-content">
+                <h3>Personal Portfolio Website</h3>
+                <div class="project-meta">
+                  <span class="meta-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Pich Chanthorn · Team Lead
+                  </span>
+                </div>
+                <p>A modern personal portfolio independently designed and developed to showcase skills, projects, and experience. Built with a clean UI, dark theme, and smooth scroll animations.</p>
+                <div class="project-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-js">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/pichchanthorn/pich-chanthorn-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://pichchanthorn.me/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Live Demo
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Individual Project 2: Educational Platform -->
+            <article class="project-card animate-fade-in-up delay-200" data-category="individual">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/project2.png"
+                  alt="Educational platform landing page design with course listings, testimonials section, and prominent call-to-action"
+                  loading="lazy"
+                >
+                <div class="project-image-overlay"></div>
+                <span class="project-badge project-badge-individual">Individual</span>
+                <span class="project-status-badge project-status-completed">Completed</span>
+              </div>
+              <div class="project-content">
+                <h3>Educational Platform Landing Page</h3>
+                <div class="project-meta">
+                  <span class="meta-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Pich Chanthorn · Frontend Developer
+                  </span>
+                </div>
+                <p>A modern, responsive landing page for an online education platform. Features course highlights, student testimonials, and strong call-to-action sections with a clean, user-focused design.</p>
+                <div class="project-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-bootstrap">Bootstrap</span>
+                  <span class="tag tag-js">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/pichchanthorn/pichchanthorn-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://pichchanthorn.github.io/pichchanthorn-portfolio/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Live Demo
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Individual Project 3: Christmas Heart Animation -->
+            <article class="project-card animate-fade-in-up delay-300" data-category="individual">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/christmas-heart-animation.png"
+                  alt="Christmas heart animation showing text following a heart-shaped SVG path with falling snow particles on a dark background"
+                  loading="lazy"
+                >
+                <div class="project-image-overlay"></div>
+                <span class="project-badge project-badge-individual">Individual</span>
+                <span class="project-status-badge project-status-completed">Completed</span>
+              </div>
+              <div class="project-content">
+                <h3>Christmas Heart Animation</h3>
+                <div class="project-meta">
+                  <span class="meta-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Pich Chanthorn · Frontend Developer
+                  </span>
+                </div>
+                <p>A festive creative animation where text follows a heart-shaped SVG path. Includes falling snow particles, responsive layout, and smooth CSS animations — built purely with vanilla web technologies.</p>
+                <div class="project-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-js">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/pichchanthorn/christmas-heart-animation" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://pichchanthorn.github.io/christmas-heart-animation/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Live Demo
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Individual Project 4: Web Programming Labs -->
+            <article class="project-card animate-fade-in-up delay-400" data-category="individual">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/project4.png"
+                  alt="Web programming labs repository view showing organized HTML, CSS, and JavaScript exercises from BBU Year 2 Semester 1"
+                  loading="lazy"
+                >
+                <div class="project-image-overlay"></div>
+                <span class="project-badge project-badge-academic">Academic</span>
+                <span class="project-status-badge project-status-completed">Completed</span>
+              </div>
+              <div class="project-content">
+                <h3>Web Programming Labs &amp; Exercises</h3>
+                <div class="project-meta">
+                  <span class="meta-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    Pich Chanthorn · BBU Year 2, Sem 1
+                  </span>
+                </div>
+                <p>A public collection of labs and exercises from the Web Programming course at Build Bright University. Documents hands-on learning progress and assignment solutions throughout the semester.</p>
+                <div class="project-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-js">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/pichchanthorn/lab-bbu-year2-sem1" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    View Repository
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <span class="btn btn-primary disabled" aria-disabled="true">Labs Only</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Individual Project 5: Mini E-commerce -->
+            <article class="project-card animate-fade-in-up delay-500" data-category="individual">
+              <div class="project-image">
+                <img
+                  src="assets/images/projects/abstract-geometric-pattern.png"
+                  alt="Mini e-commerce product page design with image gallery, product details panel, add-to-cart button, and related products section"
+                  loading="lazy"
+                >
+                <div class="project-image-overlay"></div>
+                <span class="project-badge project-badge-individual">Individual</span>
+                <span class="project-status-badge project-status-inprogress">In Progress</span>
+              </div>
+              <div class="project-content">
+                <h3>Mini E-commerce Product Page</h3>
+                <div class="project-meta">
+                  <span class="meta-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Pich Chanthorn · Frontend Developer
+                  </span>
+                </div>
+                <p>A product showcase page featuring an image gallery, detailed product information, add-to-cart interaction, and a related products section built with a modern e-commerce-inspired layout.</p>
+                <div class="project-tags">
+                  <span class="tag tag-html">HTML</span>
+                  <span class="tag tag-css">CSS</span>
+                  <span class="tag tag-js">JavaScript</span>
+                  <span class="tag tag-tailwind">Tailwind CSS</span>
+                </div>
+                <div class="project-actions">
+                  <span class="btn btn-outline disabled" aria-disabled="true">Coming Soon</span>
+                  <span class="btn btn-primary disabled" aria-disabled="true">Coming Soon</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div><!-- /individual projects -->
+
+      </div>
+    </section>
+
+    <!-- ===== Technologies Used ===== -->
+    <section class="tech-summary" aria-label="Technologies used">
       <div class="container">
         <div class="section-header">
+          <span class="section-eyebrow">Our Stack</span>
           <h2 class="section-title">Technologies Used</h2>
-          <p class="section-description">The tools and frameworks powering our projects</p>
+          <p class="section-description">The tools and frameworks powering Team 208's projects</p>
         </div>
 
         <div class="tech-grid">
           <div class="tech-item">
             <div class="tech-icon tech-icon-html">H</div>
-            <p>HTML</p>
+            <p>HTML5</p>
           </div>
           <div class="tech-item">
             <div class="tech-icon tech-icon-css">C</div>
-            <p>CSS</p>
+            <p>CSS3</p>
           </div>
           <div class="tech-item">
             <div class="tech-icon tech-icon-js">J</div>
@@ -327,12 +461,41 @@
         </div>
       </div>
     </section>
+
+    <!-- ===== Call to Action ===== -->
+    <section class="projects-cta" aria-label="Work with Team 208">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="cta-title">Want to work with Team 208?</h2>
+          <p class="cta-description">
+            We're open to collaboration, feedback, and new opportunities.
+            Whether you have a project idea or just want to connect — we'd love to hear from you.
+          </p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">
+              Contact Us
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="team.html" class="btn btn-cta">
+              Meet the Team
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer class="footer">
-    <div class="container"> 
+    <div class="container">
       <div class="footer-grid">
-        
+
         <div class="footer-brand">
           <div class="footer-logo">
             <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -396,5 +559,36 @@
   </footer>
 
   <script src="js/script.js"></script>
+
+  <!-- Projects page: filter functionality -->
+  <script>
+    ;(() => {
+      const filterBtns = document.querySelectorAll('.filter-btn')
+      const categories = document.querySelectorAll('.projects-category')
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter
+
+          // Update active state
+          filterBtns.forEach(b => {
+            b.classList.remove('active')
+            b.setAttribute('aria-selected', 'false')
+          })
+          btn.classList.add('active')
+          btn.setAttribute('aria-selected', 'true')
+
+          // Show / hide categories
+          categories.forEach(cat => {
+            if (filter === 'all' || cat.dataset.categoryGroup === filter) {
+              cat.style.display = ''
+            } else {
+              cat.style.display = 'none'
+            }
+          })
+        })
+      })
+    })()
+  </script>
 </body>
 </html>
