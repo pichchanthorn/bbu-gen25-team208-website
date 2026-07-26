@@ -1053,20 +1053,30 @@
   border-color: rgba(148, 163, 184, 0.25);
 }
 
-/* Placeholder art for projects that have no screenshot yet */
+/* Placeholder art for projects that have no screenshot yet — the member's
+   own photo stands in, so the card is clearly theirs without inventing work */
 .project-image-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: color-mix(in srgb, var(--primary) 45%, transparent);
 }
-.project-image-placeholder svg {
-  width: 3rem;
-  height: 3rem;
-  stroke-width: 1.25;
+/* Scoped to .project-image so it outranks the `.project-image img`
+   rule above, which stretches real screenshots to fill the 16:9 frame. */
+.project-image .placeholder-avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    var(--gradient-primary) border-box;
+  box-shadow: var(--shadow-md);
 }
+/* The parent card's hover zoom is meant for screenshots, not a portrait. */
+.project-card:hover .project-image .placeholder-avatar { transform: none; }
 
 /* Placeholder cards are intentionally quieter than real project cards */
 .project-card-placeholder .project-image {
