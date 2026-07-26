@@ -184,17 +184,96 @@
     return isValid
   }
 
+  // ----- Delivery (Formspree) -----
+  const submitButton = document.getElementById("submitButton")
+  const formAlert = document.getElementById("formAlert")
+  const buttonLabel = submitButton ? submitButton.querySelector(".btn-label") : null
+
+  const formspreeId = contactForm.dataset.formspreeId
+  const fallbackEmail = contactForm.dataset.fallbackEmail
+  // The endpoint is only real once someone replaces the placeholder id in contact.html.
+  const isConfigured = Boolean(formspreeId) && formspreeId !== "YOUR_FORMSPREE_ID"
+  const endpoint = `https://formspree.io/f/${formspreeId}`
+
+  function showAlert(message) {
+    if (!formAlert) return
+    formAlert.innerHTML = message
+    formAlert.classList.add("active")
+  }
+
+  function clearAlert() {
+    if (!formAlert) return
+    formAlert.innerHTML = ""
+    formAlert.classList.remove("active")
+  }
+
+  function setSending(sending) {
+    if (!submitButton) return
+    submitButton.disabled = sending
+    submitButton.classList.toggle("is-sending", sending)
+    if (buttonLabel) {
+      buttonLabel.textContent = sending ? "Sending…" : "Send Message"
+    }
+  }
+
+  const mailtoLink = (label) =>
+    `<a href="mailto:${fallbackEmail}">${label || fallbackEmail}</a>`
+
+  // Formspree returns a helpful { errors: [{ message, field }] } body on 4xx.
+  async function readError(response) {
+    try {
+      const data = await response.json()
+      if (data && Array.isArray(data.errors) && data.errors.length) {
+        return data.errors.map((err) => err.message).join(", ")
+      }
+    } catch (err) {
+      /* non-JSON body — fall through to the generic message */
+    }
+    return ""
+  }
+
   // Form submit
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault()
 
-    if (validateForm()) {
-      // Show success message
+    if (!validateForm()) return
+
+    if (!isConfigured) {
+      showAlert(
+        `This form isn't connected to a mail service yet. Please email us directly at ${mailtoLink()}.`
+      )
+      return
+    }
+
+    clearAlert()
+    setSending(true)
+
+    try {
+      const formData = new FormData(contactForm)
+      // Gives the notification email a meaningful subject line.
+      formData.append("_subject", `Team 208 website: ${subjectInput.value.trim()}`)
+
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      })
+
+      if (!response.ok) {
+        const detail = await readError(response)
+        throw new Error(detail || `Request failed with status ${response.status}`)
+      }
+
       contactForm.classList.add("hidden")
       successMessage.classList.add("active")
-
-      // Reset form
       contactForm.reset()
+    } catch (err) {
+      showAlert(
+        `Sorry, your message couldn't be sent (${err.message}). ` +
+          `Please try again, or email us at ${mailtoLink()}.`
+      )
+    } finally {
+      setSending(false)
     }
   })
 
@@ -203,6 +282,7 @@
     sendAnother.addEventListener("click", () => {
       successMessage.classList.remove("active")
       contactForm.classList.remove("hidden")
+      clearAlert()
     })
   }
 })()

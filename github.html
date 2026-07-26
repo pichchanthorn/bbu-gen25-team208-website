@@ -1,147 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Our Team – BBU Gen25 Team 208</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub &amp; Socials – BBU Gen25 Team 208</title>
+  <meta name="description" content="Find the GitHub repositories and social profiles of every member of BBU Gen25 Web Programming Team 208.">
+  <link rel="canonical" href="https://team208.pichchanthorn.me/github.html">
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <!-- Open Graph / social link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BBU Gen25 – Team 208">
+  <meta property="og:url" content="https://team208.pichchanthorn.me/github.html">
+  <meta property="og:title" content="GitHub &amp; Socials – BBU Gen25 Team 208">
+  <meta property="og:description" content="Find the GitHub repositories and social profiles of every member of BBU Gen25 Web Programming Team 208.">
+  <meta property="og:image" content="https://team208.pichchanthorn.me/assets/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BBU Gen25 Team 208 website home page">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GitHub &amp; Socials – BBU Gen25 Team 208">
+  <meta name="twitter:description" content="Find the GitHub repositories and social profiles of every member of BBU Gen25 Web Programming Team 208.">
+  <meta name="twitter:image" content="https://team208.pichchanthorn.me/assets/images/og-cover.jpg">
 
-  <!-- Tailwind Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            christmasRed: "#dc2626",
-            christmasGreen: "#16a34a",
-          },
-        },
-      },
-    };
-  </script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar site-header">
+    <nav class="nav-container site-nav__container" aria-label="Primary">
+      <a href="index.html" class="logo site-nav__brand" aria-label="BBU Gen25 Team 208 Home">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        <span class="logo-text-full">BBU Gen25 – Team 208</span>
+        <span class="logo-text-short">BBU Gen25</span>
+      </a>
 
-<body class="min-h-screen relative text-slate-800">
+      <div class="nav-links site-nav__links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="github.html" class="nav-link active">GitHub</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
 
-<!-- ❄️ Snow Canvas (TOP LAYER) -->
-<canvas id="snow" class="fixed inset-0 pointer-events-none z-50"></canvas>
+      <div class="mobile-controls">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
 
-<!-- 🎄 Background Wrapper -->
-<div class="min-h-screen bg-gradient-to-b from-sky-100 via-sky-50 to-white relative z-0">
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="team.html" class="mobile-nav-link">Team</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="github.html" class="mobile-nav-link active">GitHub</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
 
-  <section class="relative z-10 py-24 px-6">
-    <div class="max-w-7xl mx-auto text-center">
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-subtitle">Open Source</p>
+        <h1 class="page-title">GitHub &amp; <span class="hero-title-accent">Socials</span></h1>
+        <p class="page-description">
+          Everything Team 208 builds is public. Browse the source of this website, or follow
+          individual members on the platforms where they share their work.
+        </p>
+      </div>
+    </section>
 
-      <h1 class="text-4xl md:text-5xl font-bold mb-2">
-        Our Team 🎄
-      </h1>
+    <!-- Team Repository -->
+    <section class="repo-section" aria-label="Team repository">
+      <div class="container">
+        <article class="repo-card animate-fade-in-up">
+          <div class="repo-card-head">
+            <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <div>
+              <p class="repo-owner">pichchanthorn /</p>
+              <h2 class="repo-name">bbu-gen25-team208-website</h2>
+            </div>
+          </div>
 
-      <p class="text-slate-600">
-        BBU Gen25 – Web Programming Team 208
-      </p>
+          <p class="repo-description">
+            The source code for this website — a static multi-page portfolio built with semantic
+            HTML, a modular CSS design system, and vanilla JavaScript. Developed collaboratively
+            for the Web Programming course at Build Bright University.
+          </p>
 
-      <p class="text-christmasGreen font-medium mb-20">
-        Christmas Season Edition ❄
-      </p>
+          <ul class="repo-tags">
+            <li class="tag tag-html">HTML</li>
+            <li class="tag tag-css">CSS</li>
+            <li class="tag tag-js">JavaScript</li>
+          </ul>
 
-      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-
-        <!-- TEAM LEAD -->
-        <article class="team-card relative">
-          <span class="badge">TEAM LEAD</span>
-          <img src="assets/images/team/pich-chanthorn.png" class="avatar" />
-          <h3 class="name">Pich Chanthorn</h3>
-          <p class="role">Frontend Developer / Team Lead</p>
-          <div class="social-group" data-member="pich"></div>
+          <div class="repo-actions">
+            <a href="https://github.com/pichchanthorn/bbu-gen25-team208-website" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              View Repository
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            <a href="projects.html" class="btn btn-outline">See All Projects</a>
+          </div>
         </article>
+      </div>
+    </section>
 
-        <!-- MEMBERS -->
-        <article class="team-card">
-          <img src="assets/images/team/mao-vibol.png" class="avatar" />
-          <h3 class="name">Mao Vibol</h3>
-          <p class="role">UI / UX Designer</p>
-          <div class="social-group" data-member="mao"></div>
-        </article>
+    <!-- Member Profiles -->
+    <section class="socials-section" aria-label="Team member profiles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Follow Along</span>
+          <h2 class="section-title">Member Profiles</h2>
+          <p class="section-description">Connect with each member of Team 208 directly</p>
+        </div>
 
-        <article class="team-card">
-          <img src="assets/images/team/san-kimhor.png" class="avatar" />
-          <h3 class="name">San Kimhor</h3>
-          <p class="role">JavaScript Developer</p>
-          <div class="social-group" data-member="san"></div>
-        </article>
+        <!--
+          Social buttons are injected by js/github.js from the config at the top of that
+          file. Only links that actually exist are rendered — add a member's URL there and
+          the button appears automatically.
+        -->
+        <div class="socials-grid">
 
-        <article class="team-card">
-          <img src="assets/images/team/khy-samrith.png" class="avatar" />
-          <h3 class="name">Khy Samrith</h3>
-          <p class="role">Frontend Developer</p>
-          <div class="social-group" data-member="khy"></div>
-        </article>
+          <article class="social-card animate-fade-in-up delay-100">
+            <span class="social-card-badge">Team Lead</span>
+            <img class="social-avatar" src="assets/images/team/pich-chanthorn.webp" width="800" height="800" loading="lazy" alt="Pich Chanthorn">
+            <h3 class="social-name">Pich Chanthorn</h3>
+            <p class="social-role">Frontend Developer / Team Lead</p>
+            <div class="social-group" data-member="pich"></div>
+          </article>
 
-        <article class="team-card">
-          <img src="assets/images/team/ratana-oudom.png" class="avatar" />
-          <h3 class="name">Ratana Oudom</h3>
-          <p class="role">Content & Testing</p>
-          <div class="social-group" data-member="ratana"></div>
-        </article>
+          <article class="social-card animate-fade-in-up delay-200">
+            <img class="social-avatar" src="assets/images/team/mao-vibol.webp" width="800" height="800" loading="lazy" alt="Mao Vibol">
+            <h3 class="social-name">Mao Vibol</h3>
+            <p class="social-role">UI/UX Designer</p>
+            <div class="social-group" data-member="mao"></div>
+          </article>
 
+          <article class="social-card animate-fade-in-up delay-300">
+            <img class="social-avatar" src="assets/images/team/san-kimhor.webp" width="800" height="800" loading="lazy" alt="San Kimhor">
+            <h3 class="social-name">San Kimhor</h3>
+            <p class="social-role">JavaScript Developer</p>
+            <div class="social-group" data-member="san"></div>
+          </article>
+
+          <article class="social-card animate-fade-in-up delay-400">
+            <img class="social-avatar" src="assets/images/team/khy-samrith.webp" width="800" height="800" loading="lazy" alt="Khy Samrith">
+            <h3 class="social-name">Khy Samrith</h3>
+            <p class="social-role">Frontend Developer</p>
+            <div class="social-group" data-member="khy"></div>
+          </article>
+
+          <article class="social-card animate-fade-in-up delay-500">
+            <img class="social-avatar" src="assets/images/team/ratana-oudom.webp" width="800" height="800" loading="lazy" alt="Ratana Oudom">
+            <h3 class="social-name">Ratana Oudom</h3>
+            <p class="social-role">Content &amp; Testing</p>
+            <div class="social-group" data-member="ratana"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>BBU Gen25 – Team 208</span>
+          </div>
+          <p class="footer-description">
+            IT students from Build Bright University passionate about front-end development and UI/UX design.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect">
+          <h3 class="footer-heading">Connect</h3>
+          <ul>
+            <li>
+              <a href="github.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="mailto:pich_chanthorn@pp.bbu.edu.kh">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Email Us
+              </a>
+            </li>
+            <li>
+              <a href="tel:+855973100485">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Call Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> BBU Gen25 – Web Programming Team 208. All rights reserved.</p>
       </div>
     </div>
-  </section>
-</div>
+  </footer>
 
-<!-- Tailwind Components -->
-<style type="text/tailwindcss">
-  .team-card {
-    @apply bg-white/80 backdrop-blur-xl border border-slate-200
-           rounded-2xl p-8 text-center transition-all duration-500
-           hover:-translate-y-3
-           hover:shadow-[0_25px_60px_rgba(220,38,38,0.15)];
-  }
-
-  .avatar {
-    @apply w-28 h-28 mx-auto rounded-full object-cover mb-4;
-    border: 4px solid transparent;
-    background:
-      linear-gradient(white, white) padding-box,
-      linear-gradient(135deg, #dc2626, #16a34a) border-box;
-  }
-
-  .name {
-    @apply text-lg font-semibold;
-  }
-
-  .role {
-    @apply text-sm text-slate-600 mb-6;
-  }
-
-  .social-group {
-    @apply flex justify-center gap-4;
-  }
-
-  .social-btn {
-    @apply w-11 h-11 flex items-center justify-center rounded-full
-           bg-slate-100 text-slate-600 transition-all duration-300
-           hover:bg-gradient-to-br hover:from-christmasRed hover:to-christmasGreen
-           hover:text-white hover:-translate-y-1;
-  }
-
-  .badge {
-    @apply absolute -top-4 left-1/2 -translate-x-1/2
-           bg-gradient-to-r from-christmasRed to-christmasGreen
-           text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg;
-  }
-</style>
-
-<!-- JS -->
-<script src="js/github.js"></script>
-<script src="js/snow.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/github.js"></script>
 </body>
 </html>

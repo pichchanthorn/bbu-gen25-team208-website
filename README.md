@@ -3,7 +3,9 @@
 
 ## Project Snapshot
 
-![Homepage Preview](assets/images/screenshots/home_preview.png)
+![Homepage Preview](assets/images/screenshots/home_preview.webp)
+
+**Live site:** <https://team208.pichchanthorn.me>
 
 This repository contains the academic group website developed by **Build Bright University (BBU), Generation 25, Team 208** for the **Web Programming** course.
 
@@ -26,12 +28,27 @@ The project demonstrates collaborative front-end development through a structure
 - Modern UI with reusable design system and modular CSS structure
 - Theme-aware styling and polished interaction patterns
 - Team profile section with role-focused presentation
-- Contact page with client-side form validation
+- Contact page with client-side validation and real email delivery via Formspree
+- Optimised WebP imagery, favicon, and Open Graph tags for social link previews
+
+## Setup — Contact Form
+
+The contact form validates in the browser and then POSTs to [Formspree](https://formspree.io).
+It ships **unconfigured**: until the step below is done, submitting shows a notice pointing at
+the team's email address instead of silently pretending the message was sent.
+
+1. Sign up at <https://formspree.io> using `pich_chanthorn@pp.bbu.edu.kh`.
+2. Create a new form. Formspree issues an endpoint like `https://formspree.io/f/abcdwxyz`.
+3. In `contact.html`, replace the placeholder in `data-formspree-id="YOUR_FORMSPREE_ID"`
+   with just the ID (`abcdwxyz`).
+4. Submit the live form once and confirm via the email Formspree sends, or messages are held.
+
+No other file needs changing — `js/script.js` reads the ID from that one attribute.
 
 ## Live Demo
 
-- **Team Website:** _Coming soon (add deployment URL here)_
-- **Suggested hosting:** GitHub Pages / Netlify / Vercel
+- **Team Website:** [https://team208.pichchanthorn.me](https://team208.pichchanthorn.me)
+- **Hosting:** GitHub Pages, served over the custom domain configured in `CNAME`
 
 ## Website Pages
 
@@ -40,7 +57,7 @@ The project demonstrates collaborative front-end development through a structure
 - `team.html` — Team member profiles and roles
 - `projects.html` — Individual and team project showcase
 - `contact.html` — Contact information and inquiry form
-- `github.html` — Tailwind-based special showcase page
+- `github.html` — Repository and member social profiles
 
 ## Featured Projects
 
@@ -50,8 +67,8 @@ The project demonstrates collaborative front-end development through a structure
 - **Role:** Frontend Developer / Team Lead
 - **Impact Summary:** Built a clean, responsive portfolio interface to present profile, technical skills, projects, and experience in a professional format.
 - **Technologies:** HTML, CSS, JavaScript
-- **Live Demo:** [https://pichchanthorn.github.io/bbu-gen25-team208-website/](https://pichchanthorn.github.io/bbu-gen25-team208-website/)
-- **Repository:** [https://github.com/pichchanthorn/bbu-gen25-team208-website?tab=readme-ov-file](https://github.com/pichchanthorn/bbu-gen25-team208-website?tab=readme-ov-file)
+- **Live Demo:** [https://pichchanthorn.me](https://pichchanthorn.me)
+- **Repository:** [https://github.com/pichchanthorn/pich-chanthorn-portfolio](https://github.com/pichchanthorn/pich-chanthorn-portfolio)
 
 ### 2) Educational Platform Landing Page
 
